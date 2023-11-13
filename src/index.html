@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>L2 "Угадай число"</title>
+  </head>
+  <body>
+    <div class="confetti">
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+  </div>
+  <div class="wrapper">
+      <h1 class="title">Угадай число</h1>
+      <div class="params">
+          <label for="minValue">Минимальное значение (1):</label>
+          <input type="number" value="1" id="minValue" min="1" max="999" step="0.1" name="minValue">
+          <label for="maxValue">Максимальное значение (1000):</label>
+          <input type="number" value="100" min="2" max="1000" id="maxValue" step="0.1" name="maxValue">
+          <button class="update_range">Установить диапазон</button>
+      <div class="main">
+          <p class="text">Загадано число от <span class="value_min">1</span> до <span class="value_max">100</span></p>
+          <div>
+              <input placeholder="Введите число..." class="user_value" type="number" min="1" max="1000" step="0.1">
+              <button class="try">Угадать</button>
+          </div>
+          <div class="block_text">
+              <p class="attempts">Попыток: <span class="attempts_count">0</span></p>
+              <p class="message">Введите число в выбранном диапазоне!</p>
+              <p class="hint"></p>
+          </div>
+          
+      </div>
+      <button class="reset">Начать заново</button>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
